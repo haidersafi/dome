@@ -33,5 +33,5 @@ jobs:
       run: npm run build
     
     - name: deploying on surge
-      run : surge ./ build bumpy-system.surge.sh --token ${{secrets.SURGETOKEN}}
+      run : surge ./build bumpy-system.surge.sh --token ${{secrets.SURGETOKEN}}
     
