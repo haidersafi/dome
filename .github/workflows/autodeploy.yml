@@ -30,7 +30,7 @@ jobs:
       run: npm install -g surge
   
     - name: build
-      run: npm run build
+      run: npm build
     
     - name: deploying on surge
       run : surge ./ build http://bumpy-system.surge.sh/ --token ${{secrets.SURGETOKEN}}
